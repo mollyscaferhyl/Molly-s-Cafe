@@ -1,0 +1,1 @@
+console.log("Molly's Cafe Website Loaded");
