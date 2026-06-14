@@ -7,64 +7,84 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <div class="header-content">
-            <h1>Molly's Cafe</h1>
-            <p>Fresh Food • Friendly Service • Rhyl</p>
-        </div>
+        <h1>Molly's Cafe</h1>
+        <p>Fresh Food • Friendly Service • Rhyl</p>
     </header>
 
     <nav>
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
-        <a href="#times">Hours</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#times">Opening Times</a>
         <a href="#contact">Contact</a>
         <a href="#location">Find Us</a>
     </nav>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-overlay">
             <h2>Welcome to Molly's Cafe</h2>
-            <p>Homemade food, hot drinks and a warm welcome in the heart of Rhyl.</p>
-
-            <a href="#menu" class="btn">View Menu</a>
+            <p>Homemade food, fresh coffee, and a warm welcome in the heart of Rhyl.</p>
         </div>
     </section>
 
     <main>
 
+        <!-- INFO -->
         <div class="info-grid">
 
             <div class="info-box">
                 <h3>📍 Location</h3>
-                <p>White Rose Centre<br>Rhyl</p>
+                <p>White Rose Centre, Rhyl</p>
             </div>
 
             <div class="info-box">
-                <h3>🕒 Opening Hours</h3>
-                <p>Monday - Friday<br>10am - 3:30pm</p>
+                <h3>🕒 Hours</h3>
+                <p>Mon–Fri<br>10am–3:30pm</p>
             </div>
 
             <div class="info-box">
-                <h3>📞 Call Us</h3>
+                <h3>📞 Call</h3>
                 <p>01745 314050</p>
             </div>
 
         </div>
 
+        <!-- ABOUT -->
         <section id="about" class="card">
             <h2>About Molly's Cafe</h2>
-
             <p>
                 Located in the White Rose Centre in Rhyl,
-                Molly's Cafe offers freshly prepared breakfasts,
-                lunches, sandwiches, hot drinks and homemade favourites
-                in a friendly and welcoming environment.
+                Molly's Cafe serves freshly prepared breakfasts,
+                lunches, sandwiches and hot drinks in a friendly
+                and welcoming environment.
             </p>
         </section>
 
+        <!-- GALLERY -->
+        <section id="gallery" class="card">
+            <h2>Gallery</h2>
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img src="images/outside.jpg" alt="Molly's Cafe outside view">
+                    <p>Outside of Molly's Cafe</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/workers-outside.jpg" alt="Molly's Cafe staff outside">
+                    <p>Our friendly team</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MENU -->
         <section id="menu" class="card">
 
             <h2>Our Menu</h2>
@@ -72,8 +92,8 @@
             <div class="menu-columns">
 
                 <div>
-                    <h3>🥪 Sandwiches, Wraps & Salads</h3>
 
+                    <h3>🥪 Sandwiches, Wraps & Salads</h3>
                     <ul class="menu-list">
                         <li><span>Ham</span><span>£3.00</span></li>
                         <li><span>Cheese</span><span>£3.00</span></li>
@@ -84,7 +104,6 @@
                     </ul>
 
                     <h3>🥔 Jacket Potatoes</h3>
-
                     <ul class="menu-list">
                         <li><span>Plain with butter</span><span>£2.50</span></li>
                         <li><span>Tuna Mayo</span><span>£3.50</span></li>
@@ -92,67 +111,47 @@
                         <li><span>Chicken Curry</span><span>£3.50</span></li>
                         <li><span>Beans</span><span>£3.00</span></li>
                     </ul>
+
                 </div>
 
                 <div>
 
                     <h3>🍳 Breakfasts</h3>
-
                     <ul class="menu-list">
                         <li><span>Full English</span><span>£5.00</span></li>
                         <li><span>Bacon, Sausage, Egg & Black Pudding</span><span>£4.00</span></li>
                         <li><span>Bagel</span><span>£3.00</span></li>
                         <li><span>Beans on Toast</span><span>£2.50</span></li>
-                        <li><span>Spaghetti Hoops on Toast</span><span>£2.50</span></li>
                         <li><span>Cheese on Toast</span><span>£2.50</span></li>
                         <li><span>Scrambled Egg on Toast</span><span>£2.50</span></li>
                         <li><span>Toasted Teacake</span><span>£1.00</span></li>
-                        <li><span>Toasted Crumpet</span><span>£1.00</span></li>
                     </ul>
 
-                    <h3>🧀 Toasties</h3>
-
+                    <h3>☕ Drinks</h3>
                     <ul class="menu-list">
-                        <li><span>Cheese</span><span>£2.20</span></li>
-                        <li><span>Cheese & Onion</span><span>£2.40</span></li>
-                        <li><span>Cheese & Tomato</span><span>£2.40</span></li>
-                        <li><span>Cheese & Ham</span><span>£2.60</span></li>
-                        <li><span>Cheese & Chicken</span><span>£2.60</span></li>
+                        <li><span>Tea</span><span>£1.00</span></li>
+                        <li><span>Coffee</span><span>£1.50</span></li>
+                        <li><span>Latte</span><span>£1.60</span></li>
+                        <li><span>Cappuccino</span><span>£1.60</span></li>
+                        <li><span>Hot Chocolate</span><span>£1.60</span></li>
+                        <li><span>Milkshake</span><span>£2.50</span></li>
                     </ul>
+
                 </div>
 
             </div>
 
-            <h3>🍱 Kids Lunchbox</h3>
-
-            <ul class="menu-list">
-                <li><span>Sandwich, Drink, Yogurt/Fruit, Crisps & Cake</span></li>
-            </ul>
-
-            <h3>☕ Drinks</h3>
-
-            <ul class="menu-list">
-                <li><span>Tea</span><span>£1.00</span></li>
-                <li><span>Coffee</span><span>£1.50</span></li>
-                <li><span>Juice</span><span>£1.50</span></li>
-                <li><span>Cans</span><span>£1.00</span></li>
-                <li><span>Milkshake</span><span>£2.50</span></li>
-                <li><span>Latte</span><span>£1.60</span></li>
-                <li><span>Bottled Water</span><span>£1.00</span></li>
-                <li><span>Cappuccino</span><span>£1.60</span></li>
-                <li><span>Hot Chocolate</span><span>£1.60</span></li>
-            </ul>
-
         </section>
 
+        <!-- TIMES -->
         <section id="times" class="card">
             <h2>Opening Times</h2>
 
             <p><strong>Monday - Friday:</strong> 10:00am - 3:30pm</p>
-            <p><strong>Saturday:</strong> Closed</p>
-            <p><strong>Sunday:</strong> Closed</p>
+            <p><strong>Saturday - Sunday:</strong> Closed</p>
         </section>
 
+        <!-- CONTACT -->
         <section id="contact" class="card">
             <h2>Contact Us</h2>
 
@@ -160,14 +159,13 @@
             <p>✉️ mollyscafe2025@outlook.com</p>
         </section>
 
+        <!-- LOCATION -->
         <section id="location" class="card">
-
             <h2>Find Us</h2>
 
             <p>
                 Unit 18-19, White Rose Centre,<br>
                 High Street, Rhyl,<br>
-                Denbighshire, Wales,<br>
                 LL18 1EW
             </p>
 
@@ -177,20 +175,12 @@
                 loading="lazy">
             </iframe>
 
-            <a
-                class="btn"
-                href="https://maps.google.com/?q=Unit+18-19+White+Rose+Centre+Rhyl+LL18+1EW"
-                target="_blank">
-                Get Directions
-            </a>
-
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026 Molly's Cafe</p>
-        <p>White Rose Centre • Rhyl</p>
+        <p>© 2026 Molly's Cafe • Rhyl</p>
     </footer>
 
 </body>
