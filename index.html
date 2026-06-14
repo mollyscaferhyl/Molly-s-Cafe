@@ -3,185 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Molly's Cafe | Rhyl</title>
+    <title>Molly's Cafe | Menu</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Molly's Cafe</h1>
-        <p>Fresh Food • Friendly Service • Rhyl</p>
-    </header>
+<header>
+    <h1>Molly's Cafe</h1>
+    <p>Fresh Food • Friendly Service • Rhyl</p>
+</header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#times">Opening Times</a>
-        <a href="#contact">Contact</a>
-        <a href="#location">Find Us</a>
-    </nav>
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+    <a href="#location">Find Us</a>
+</nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-overlay">
-            <h2>Welcome to Molly's Cafe</h2>
-            <p>Homemade food, fresh coffee, and a warm welcome in the heart of Rhyl.</p>
+<section class="hero">
+    <div class="hero-overlay">
+        <h2>Welcome to Molly's Cafe</h2>
+        <p>Homemade food, fresh meals, and a warm welcome.</p>
+    </div>
+</section>
+
+<main>
+
+    <section id="menu" class="card">
+        <h2>Menu</h2>
+
+        <div class="menu-grid">
+
+            <!-- Sandwiches -->
+            <div class="menu-box">
+                <h3>🥪 Sandwiches & Wraps (£3.50)</h3>
+                <ul>
+                    <li>Ham</li>
+                    <li>Cheese</li>
+                    <li>Chicken</li>
+                    <li>Tuna Mayo</li>
+                    <li>BLT</li>
+                </ul>
+                <p class="note">Served with side salad & homemade coleslaw</p>
+            </div>
+
+            <!-- Breakfasts -->
+            <div class="menu-box">
+                <h3>🍳 Breakfasts</h3>
+
+                <p><strong>Full English - £6.00</strong></p>
+                <p class="note">1 sausage, 1 bacon, 1 hash brown, 1 fried egg, beans, plum tomatoes, black pudding & toast</p>
+
+                <p><strong>Breakfast Bap - £4.00</strong><br>Bacon, sausage, egg & black pudding</p>
+
+                <p><strong>Bagel - £3.00</strong><br>Butter, cream cheese, ham & tomatoes</p>
+
+                <ul>
+                    <li>Beans on toast - £3.00</li>
+                    <li>Spaghetti hoops on toast - £3.00</li>
+                    <li>Cheese on toast - £3.00</li>
+                    <li>Scrambled egg on toast - £3.00</li>
+                    <li>Toasted teacake - £1.50</li>
+                    <li>Toasted crumpet - £1.50</li>
+                </ul>
+            </div>
+
+            <!-- Jacket Spuds -->
+            <div class="menu-box">
+                <h3>🥔 Jacket Potatoes</h3>
+                <ul>
+                    <li>Beans - £3.00</li>
+                    <li>Tuna mayo - £3.50</li>
+                    <li>Chilli - £3.50</li>
+                    <li>Chicken curry - £3.50</li>
+                </ul>
+                <p class="note">Add cheese - 50p</p>
+            </div>
+
+            <!-- Kids -->
+            <div class="menu-box">
+                <h3>🍱 Kids Lunch Box</h3>
+                <p>Sandwich, drink, yoghurt, crisps & biscuit</p>
+                <p><strong>£3.00</strong></p>
+            </div>
+
+            <!-- Toasties -->
+            <div class="menu-box">
+                <h3>🧀 Toasties</h3>
+                <ul>
+                    <li>Cheese - £2.50</li>
+                    <li>Cheese & Onion - £2.75</li>
+                    <li>Cheese & Tomato - £2.75</li>
+                    <li>Cheese & Ham - £3.00</li>
+                    <li>Cheese & Chicken - £3.00</li>
+                </ul>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-box">
+                <h3>☕ Drinks</h3>
+                <ul>
+                    <li>Tea - £1.50</li>
+                    <li>Coffee - £2.00</li>
+                    <li>Latte - £2.10</li>
+                    <li>Cappuccino - £2.10</li>
+                    <li>Hot Chocolate - £2.10</li>
+                    <li>Juice - £0.50</li>
+                    <li>Cans - £1.40</li>
+                    <li>Milkshake - £3.00</li>
+                    <li>Bottled Water - £1.00</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
-    <main>
+</main>
 
-        <!-- INFO -->
-        <div class="info-grid">
-
-            <div class="info-box">
-                <h3>📍 Location</h3>
-                <p>White Rose Centre, Rhyl</p>
-            </div>
-
-            <div class="info-box">
-                <h3>🕒 Hours</h3>
-                <p>Mon–Fri<br>10am–3:30pm</p>
-            </div>
-
-            <div class="info-box">
-                <h3>📞 Call</h3>
-                <p>01745 314050</p>
-            </div>
-
-        </div>
-
-        <!-- ABOUT -->
-        <section id="about" class="card">
-            <h2>About Molly's Cafe</h2>
-            <p>
-                Located in the White Rose Centre in Rhyl,
-                Molly's Cafe serves freshly prepared breakfasts,
-                lunches, sandwiches and hot drinks in a friendly
-                and welcoming environment.
-            </p>
-        </section>
-
-        <!-- GALLERY -->
-        <section id="gallery" class="card">
-            <h2>Gallery</h2>
-
-            <div class="gallery">
-
-                <div class="gallery-item">
-                    <img src="images/outside.jpg" alt="Molly's Cafe outside view">
-                    <p>Outside of Molly's Cafe</p>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="images/workers-outside.jpg" alt="Molly's Cafe staff outside">
-                    <p>Our friendly team</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- MENU -->
-        <section id="menu" class="card">
-
-            <h2>Our Menu</h2>
-
-            <div class="menu-columns">
-
-                <div>
-
-                    <h3>🥪 Sandwiches, Wraps & Salads</h3>
-                    <ul class="menu-list">
-                        <li><span>Ham</span><span>£3.00</span></li>
-                        <li><span>Cheese</span><span>£3.00</span></li>
-                        <li><span>Chicken</span><span>£3.00</span></li>
-                        <li><span>Tuna Mayo</span><span>£3.00</span></li>
-                        <li><span>BLT</span><span>£3.50</span></li>
-                        <li><span>Ploughmans</span><span>£4.00</span></li>
-                    </ul>
-
-                    <h3>🥔 Jacket Potatoes</h3>
-                    <ul class="menu-list">
-                        <li><span>Plain with butter</span><span>£2.50</span></li>
-                        <li><span>Tuna Mayo</span><span>£3.50</span></li>
-                        <li><span>Chilli</span><span>£3.50</span></li>
-                        <li><span>Chicken Curry</span><span>£3.50</span></li>
-                        <li><span>Beans</span><span>£3.00</span></li>
-                    </ul>
-
-                </div>
-
-                <div>
-
-                    <h3>🍳 Breakfasts</h3>
-                    <ul class="menu-list">
-                        <li><span>Full English</span><span>£5.00</span></li>
-                        <li><span>Bacon, Sausage, Egg & Black Pudding</span><span>£4.00</span></li>
-                        <li><span>Bagel</span><span>£3.00</span></li>
-                        <li><span>Beans on Toast</span><span>£2.50</span></li>
-                        <li><span>Cheese on Toast</span><span>£2.50</span></li>
-                        <li><span>Scrambled Egg on Toast</span><span>£2.50</span></li>
-                        <li><span>Toasted Teacake</span><span>£1.00</span></li>
-                    </ul>
-
-                    <h3>☕ Drinks</h3>
-                    <ul class="menu-list">
-                        <li><span>Tea</span><span>£1.00</span></li>
-                        <li><span>Coffee</span><span>£1.50</span></li>
-                        <li><span>Latte</span><span>£1.60</span></li>
-                        <li><span>Cappuccino</span><span>£1.60</span></li>
-                        <li><span>Hot Chocolate</span><span>£1.60</span></li>
-                        <li><span>Milkshake</span><span>£2.50</span></li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- TIMES -->
-        <section id="times" class="card">
-            <h2>Opening Times</h2>
-
-            <p><strong>Monday - Friday:</strong> 10:00am - 3:30pm</p>
-            <p><strong>Saturday - Sunday:</strong> Closed</p>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="card">
-            <h2>Contact Us</h2>
-
-            <p>📞 01745 314050</p>
-            <p>✉️ mollyscafe2025@outlook.com</p>
-        </section>
-
-        <!-- LOCATION -->
-        <section id="location" class="card">
-            <h2>Find Us</h2>
-
-            <p>
-                Unit 18-19, White Rose Centre,<br>
-                High Street, Rhyl,<br>
-                LL18 1EW
-            </p>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.2215996639766!2d-3.492248522352594!3d53.32138547658968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4865290016be30af%3A0x503576d546cfb372!2sMolly&#39;s%20Cafe!5e0!3m2!1sen!2suk!4v1781206677357!5m2!1sen!2suk"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Molly's Cafe • Rhyl</p>
-    </footer>
+<footer>
+    <p>© 2026 Molly's Cafe</p>
+</footer>
 
 </body>
 </html>
