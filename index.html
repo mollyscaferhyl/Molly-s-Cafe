@@ -1,129 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Molly's Cafe | Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Molly's Café | Rhyl</title>
+
+<meta name="description" content="Molly's Café in Rhyl - Fresh breakfasts, homemade lunches, hot drinks and friendly service.">
+<meta name="keywords" content="Molly's Cafe, Rhyl cafe, breakfast Rhyl, lunch Rhyl, coffee shop Rhyl">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+  <p>📍 Rhyl • ☕ Fresh Food • 🍳 Breakfast Served All Day</p>
+</div>
+
+<!-- HEADER -->
 <header>
-    <h1>Molly's Cafe</h1>
-    <p>Fresh Food • Friendly Service • Rhyl</p>
+  <h1>Molly's Café</h1>
+  <p class="subtitle">Fresh Food • Friendly Service • Rhyl</p>
 </header>
 
+<!-- NAV -->
 <nav>
-    <a href="#menu">Menu</a>
-    <a href="#contact">Contact</a>
-    <a href="#location">Find Us</a>
+  <a href="#menu">Menu</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#location">Find Us</a>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-    <div class="hero-overlay">
-        <h2>Welcome to Molly's Cafe</h2>
-        <p>Homemade food, fresh meals, and a warm welcome.</p>
-    </div>
+  <div class="hero-overlay">
+    <h2>Welcome to Molly's Café</h2>
+    <p>Homemade food, proper breakfasts & a warm welcome every time.</p>
+    <a href="#menu" class="btn">View Menu</a>
+  </div>
 </section>
 
 <main>
 
-    <section id="menu" class="card">
-        <h2>Menu</h2>
+<!-- MENU -->
+<section id="menu" class="card">
+  <h2>Menu</h2>
 
-        <div class="menu-grid">
+  <div class="menu-grid">
 
-            <!-- Sandwiches -->
-            <div class="menu-box">
-                <h3>🥪 Sandwiches & Wraps (£3.50)</h3>
-                <ul>
-                    <li>Ham</li>
-                    <li>Cheese</li>
-                    <li>Chicken</li>
-                    <li>Tuna Mayo</li>
-                    <li>BLT</li>
-                </ul>
-                <p class="note">Served with side salad & homemade coleslaw</p>
-            </div>
+    <div class="menu-item">
+      <h3>🥪 Sandwiches</h3>
+      <p>Ham, Cheese, Chicken, Tuna, BLT</p>
+      <span>£3.50</span>
+    </div>
 
-            <!-- Breakfasts -->
-            <div class="menu-box">
-                <h3>🍳 Breakfasts</h3>
+    <div class="menu-item">
+      <h3>🍳 Breakfast</h3>
+      <p>Full English, Breakfast Bap, Toast options</p>
+      <span>From £3.00</span>
+    </div>
 
-                <p><strong>Full English - £6.00</strong></p>
-                <p class="note">1 sausage, 1 bacon, 1 hash brown, 1 fried egg, beans, plum tomatoes, black pudding & toast</p>
+    <div class="menu-item">
+      <h3>🥔 Jacket Potatoes</h3>
+      <p>Beans, Tuna, Chilli, Chicken Curry</p>
+      <span>£3.00 - £3.50</span>
+    </div>
 
-                <p><strong>Breakfast Bap - £4.00</strong><br>Bacon, sausage, egg & black pudding</p>
+    <div class="menu-item">
+      <h3>🧀 Toasties</h3>
+      <p>Cheese, Ham, Onion, Tomato</p>
+      <span>From £2.50</span>
+    </div>
 
-                <p><strong>Bagel - £3.00</strong><br>Butter, cream cheese, ham & tomatoes</p>
+    <div class="menu-item">
+      <h3>☕ Drinks</h3>
+      <p>Tea, Coffee, Latte, Hot Chocolate</p>
+      <span>From £1.50</span>
+    </div>
 
-                <ul>
-                    <li>Beans on toast - £3.00</li>
-                    <li>Spaghetti hoops on toast - £3.00</li>
-                    <li>Cheese on toast - £3.00</li>
-                    <li>Scrambled egg on toast - £3.00</li>
-                    <li>Toasted teacake - £1.50</li>
-                    <li>Toasted crumpet - £1.50</li>
-                </ul>
-            </div>
+  </div>
+</section>
 
-            <!-- Jacket Spuds -->
-            <div class="menu-box">
-                <h3>🥔 Jacket Potatoes</h3>
-                <ul>
-                    <li>Beans - £3.00</li>
-                    <li>Tuna mayo - £3.50</li>
-                    <li>Chilli - £3.50</li>
-                    <li>Chicken curry - £3.50</li>
-                </ul>
-                <p class="note">Add cheese - 50p</p>
-            </div>
+<!-- GALLERY -->
+<section id="gallery" class="card">
+  <h2>Gallery</h2>
 
-            <!-- Kids -->
-            <div class="menu-box">
-                <h3>🍱 Kids Lunch Box</h3>
-                <p>Sandwich, drink, yoghurt, crisps & biscuit</p>
-                <p><strong>£3.00</strong></p>
-            </div>
+  <div class="gallery">
+    <img src="images/this_is_us.jpg">
+    <img src="images/new_drinks.jpg">
+    <img src="images/biscoff_cake.jpg">
+    <img src="images/flapjack.jpg">
+  </div>
+</section>
 
-            <!-- Toasties -->
-            <div class="menu-box">
-                <h3>🧀 Toasties</h3>
-                <ul>
-                    <li>Cheese - £2.50</li>
-                    <li>Cheese & Onion - £2.75</li>
-                    <li>Cheese & Tomato - £2.75</li>
-                    <li>Cheese & Ham - £3.00</li>
-                    <li>Cheese & Chicken - £3.00</li>
-                </ul>
-            </div>
+<!-- REVIEWS -->
+<section id="reviews" class="card">
+  <h2>What Customers Say</h2>
 
-            <!-- Drinks -->
-            <div class="menu-box">
-                <h3>☕ Drinks</h3>
-                <ul>
-                    <li>Tea - £1.50</li>
-                    <li>Coffee - £2.00</li>
-                    <li>Latte - £2.10</li>
-                    <li>Cappuccino - £2.10</li>
-                    <li>Hot Chocolate - £2.10</li>
-                    <li>Juice - £0.50</li>
-                    <li>Cans - £1.40</li>
-                    <li>Milkshake - £3.00</li>
-                    <li>Bottled Water - £1.00</li>
-                </ul>
-            </div>
+  <div class="reviews">
 
-        </div>
-    </section>
+    <div class="review">
+      <p>“I’ve always gone to visit molly’s cafe with family but they’ve always been super friendly with everyone no matter the circumstances, it’s such a friendly atmosphere to be around and it’s like one big community coming together, I highly recommend this place!  Very supportive , kind and caring staff that bring everything together”</p>
+      <b>⭐⭐⭐⭐⭐ Charlotte</b>
+    </div>
+
+    <div class="review">
+      <p>“Went to the cafe for lunch on Tuesday. 
+The food was really tasty and presented really nice.
+I also had a lemon meringue pie with cream was delicious .
+Will call again next time I’m in town.
+Well done to all of the staff the service was fantastic and staff really friendly.”</p>
+      <b>⭐⭐⭐⭐⭐ Shena</b>
+    </div>
+
+    <div class="review">
+      <p>“Only popped in to be honest with my nephew as his phone was bring repaired next door.I didn't even know it was there.We only had coffee and cake but the coffee cake was the best I've had ! Absolutely delicious!! and really good prices! Will definately go back and would definately recommend !!!🥰”</p>
+      <b>⭐⭐⭐⭐⭐ Sylvia</b>
+    </div>
+
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="card">
+  <h2>Find Us</h2>
+
+  <p>📍 Molly's Café, Rhyl</p>
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.2215996639766!2d-3.492248522352617!3d53.321385476589676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4865290016be30af%3A0x503576d546cfb372!2sMolly&#39;s%20Cafe!5e0!3m2!1sen!2suk!4v1783108665632!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+      width="100%"
+      height="300"
+      style="border:0;"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</section>
 
 </main>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Molly's Cafe</p>
+  <p>© 2026 Molly's Café</p>
 </footer>
 
+<!-- MOBILE CALL BUTTON -->
+<a href="tel:01745314050" class="call-btn">📞 Call Now</a>
+
+<script src="script.js"></script>
 </body>
 </html>

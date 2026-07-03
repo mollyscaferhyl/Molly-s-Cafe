@@ -1,123 +1,204 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f7f1e8;
-    color:#2e2e2e;
-    line-height:1.6;
+font-family:system-ui;
+background:#faf7f2;
+color:#3f322a;
+}
+
+/* TOP BAR */
+.topbar{
+background:#6f4e37;
+color:white;
+text-align:center;
+padding:8px;
+font-size:14px;
 }
 
 /* HEADER */
 header{
-    background:#7a3d12;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
+text-align:center;
+padding:50px 20px;
 }
 
 header h1{
-    font-size:2.8rem;
+font-size:3rem;
+color:#6f4e37;
+}
+
+.subtitle{
+color:#8b6d57;
 }
 
 /* NAV */
 nav{
-    background:#5f2f0d;
-    text-align:center;
-    padding:12px;
+display:flex;
+justify-content:center;
+gap:20px;
+padding:15px;
+background:white;
+position:sticky;
+top:0;
+z-index:10;
+border-bottom:1px solid #eee;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 12px;
-    font-weight:bold;
+text-decoration:none;
+color:#6f4e37;
+font-weight:bold;
 }
 
 /* HERO */
 .hero{
-    height:300px;
-    background:url("https://images.unsplash.com/photo-1554118811-1e0d58224f24") center/cover;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+height:400px;
+background:url("images/outside.jpg") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
 .hero-overlay{
-    background:rgba(0,0,0,0.55);
-    color:white;
-    padding:20px;
-    border-radius:12px;
-    text-align:center;
+background:rgba(0,0,0,0.55);
+color:white;
+padding:25px;
+border-radius:15px;
 }
 
-/* MAIN */
-main{
-    max-width:1100px;
-    margin:auto;
-    padding:20px;
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 18px;
+background:#8b5e3c;
+color:white;
+border-radius:999px;
+text-decoration:none;
 }
 
-/* MENU GRID */
+/* CARD */
+.card{
+max-width:1100px;
+margin:25px auto;
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* MENU */
 .menu-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:15px;
 }
 
-/* MENU BOX */
-.menu-box{
-    background:white;
-    padding:18px;
-    border-radius:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+.menu-item{
+background:#faf7f2;
+padding:15px;
+border-radius:12px;
 }
 
-.menu-box h3{
-    color:#7a3d12;
-    margin-bottom:10px;
+.menu-item span{
+display:block;
+margin-top:8px;
+font-weight:bold;
+color:#6f4e37;
 }
 
-.menu-box ul{
-    list-style:none;
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+margin-top:10px;
 }
 
-.menu-box li{
-    padding:4px 0;
-    border-bottom:1px solid #eee;
+.gallery img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:12px;
 }
 
-.note{
-    font-size:0.9rem;
-    color:#666;
-    margin-top:8px;
+/* REVIEWS */
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:10px;
+}
+
+.review{
+background:#faf7f2;
+padding:15px;
+border-radius:12px;
+}
+
+/* MAP */
+.map iframe{
+width:100%;
+height:300px;
+border:0;
+border-radius:12px;
+margin-top:10px;
 }
 
 /* FOOTER */
 footer{
-    background:#1f1f1f;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:20px;
+text-align:center;
+padding:30px;
+color:#777;
+}
+
+/* CALL BUTTON */
+.call-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* MOBILE */
-@media(max-width:768px){
+@media(max-width:700px){
+nav{flex-wrap:wrap}
+header h1{font-size:2.2rem}
+.hero{height:320px}
+}
 
-    header h1{
-        font-size:2rem;
-    }
+.menu-item,
+.gallery img,
+.review {
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-    .hero{
-        height:220px;
-    }
+.menu-item:hover{
+transform: translateY(-6px);
+box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
 
-    nav a{
-        display:block;
-        margin:8px 0;
-    }
+.gallery img{
+cursor:pointer;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery img:hover{
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.review:hover{
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.10);
 }
